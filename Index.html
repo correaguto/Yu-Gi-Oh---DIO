@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yu-Gi-Oh! Duel Realista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <!-- HUD -->
+    <div id="hud">
+      <div class="lp-container">
+        <h2>Você</h2>
+        <div class="lp-bar"><div id="lp-player-bar"></div></div>
+        <span id="lp-player">4000</span>
+      </div>
+      <div class="lp-container">
+        <h2>CPU</h2>
+        <div class="lp-bar"><div id="lp-cpu-bar"></div></div>
+        <span id="lp-cpu">4000</span>
+      </div>
+    </div>
+
+    <!-- Campo de jogo -->
+    <div id="field">
+      <div class="board-row" id="cpu-field"></div>
+      <div class="board-row" id="player-field"></div>
+    </div>
+
+    <!-- Mão do jogador -->
+    <div id="hand"></div>
+
+    <!-- Log de duelo -->
+    <div id="log"></div>
+
+    <!-- Botão próximo turno -->
+    <button id="next-phase-btn">Próxima Fase</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
